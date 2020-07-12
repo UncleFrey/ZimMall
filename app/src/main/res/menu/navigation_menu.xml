@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:iconTint="#FFFFFF"/>
+
+    <item
+        android:id="@+id/menuCategories"
+        android:icon="@drawable/search"
+        android:title="Search"
+        android:iconTint="#FFFFFF"/>
+
+    <item
+        android:id="@+id/menuCart"
+        android:icon="@drawable/cart"
+        android:title="My Cart"
+        android:iconTint="#FFFFFF"/>
+
+    <item
+        android:id="@+id/menuOrders"
+        android:icon="@drawable/orders"
+        android:title="My Orders"
+        android:iconTint="#FFFFFF"/>
+
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/settings"
+        android:title="Account Settings"
+        android:iconTint="#FFFFFF"/>
+
+    <item
+        android:id="@+id/menuCash"
+        android:icon="@drawable/cash_icon"
+        android:title="How to Deposit"
+        android:iconTint="#FFFFFF"/>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/menuAboutUs"
+                android:icon="@drawable/aboutus_icon"
+                android:title="About Us"
+                android:iconTint="#FFFFFF"/>
+
+            <item
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/logout"
+                android:title="LogOut"
+                android:iconTint="#FFFFFF"/>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <array name="depositStates">
+        <item>In Review</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </array>
+
+    <array name="orderStates">
+        <item>Review</item>
+        <item>Packaging</item>
+        <item>OnFlight</item>
+        <item>Delayed</item>
+        <item>Local</item>
+        <item>Enroute</item>
+        <item>Custom</item>
+    </array>
+
+    <array name="btnOrderAction">
+        <item>Browse</item>
+        <item>Call</item>
+    </array>
+
+    <array name="productStates">
+        <item>PreOrder</item>
+        <item>InStock</item>
+        <item>Out of Stock</item>
+    </array>
+</resources>

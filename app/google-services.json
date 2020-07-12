@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48435862640",
+    "firebase_url": "https://zimmall.firebaseio.com",
+    "project_id": "zimmall",
+    "storage_bucket": "zimmall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48435862640:android:7397e8fa56c5aac600e8b5",
+        "android_client_info": {
+          "package_name": "co.zw.sekai.zimmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48435862640-0fffuhhn2s2t66dls4lmu2hvc1i6lo5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.zw.sekai.zimmall",
+            "certificate_hash": "ac8f1deccedc4434d5a7ec407f082b0e6eebdfe6"
+          }
+        },
+        {
+          "client_id": "48435862640-ukadbl6rhqd19r3nqgpg595eg4e0pjsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANKv4BhUwAG1vzCEAfbrZsMI9FJhN9Tgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48435862640-ukadbl6rhqd19r3nqgpg595eg4e0pjsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

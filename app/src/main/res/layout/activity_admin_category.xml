@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AdminActivities.ActivityAdminCategory">
+
+    <LinearLayout
+        android:id="@+id/linearHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewLogo2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/icon_bag_foreground" />
+
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Categories"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonManage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:text="MANAGE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollCategories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearHeading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Consumer Electronics &amp; Accessories"
+                    android:textColor="#7E7E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutElectronics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewPhones"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/textViewPhone"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Phones &amp; Accessories"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutAccesories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayoutPhoto"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayoutElectronics"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewComputer"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/img_computer" />
+
+                        <TextView
+                            android:id="@+id/textViewComputer"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Computers &amp; Sound"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewPhoto"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/camera" />
+
+                        <TextView
+                            android:id="@+id/textViewPhoto"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Photos &amp; Media"
+                            android:textAlignment="textEnd"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Fashion &amp; Beauty"
+                    android:textColor="#7E7E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutMen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewMen"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/mens_fashion" />
+
+                        <TextView
+                            android:id="@+id/textViewMen"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Men's Fashion"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutWomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayoutBeauty"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayoutMen"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewWomen"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/womens_fashion" />
+
+                        <TextView
+                            android:id="@+id/textViewWomen"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Women's Fashion"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutBeauty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewAccessories"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/watch_icon" />
+
+                        <TextView
+                            android:id="@+id/textViewAccessories"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Accesories &amp; Beauty"
+                            android:textAlignment="textEnd"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="House Hold &amp; Garage"
+                    android:textColor="#7E7E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutFurniture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewFurniture"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/chair" />
+
+                        <TextView
+                            android:id="@+id/textViewFurniture"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Furniture &amp; Dressing"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutKitchenWare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayoutAppliances"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayoutFurniture"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewKitchenWare"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/kitchenware" />
+
+                        <TextView
+                            android:id="@+id/textViewKitchenWare"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kitchenware"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutAppliances"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageViewAppliances"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            app:srcCompat="@drawable/blender_icon" />
+
+                        <TextView
+                            android:id="@+id/textViewAppliances"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Appliances &amp; Tools"
+                            android:textAlignment="textEnd"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

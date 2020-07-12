@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ZimMall</string>
+    <string name="signature">©SekaiStudios2020</string>
+    <string name="title_activity_home">ActivityHome</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_us">Zimbabwean Mall is not a new idea, rather a bespoke one.
+    There are thousands of online stores out there but because of our country\'s statue and economic
+    situation, sadly we never used to have a reliable online solution for shopping... Until now.
+    With Zim Mall, the possibilites Open up, wether you are a Shopper or Seller, you get the best of
+    of the best of service.</string>
+
+    <string name="out_partners">We take Pride in our Philosophy of Work which encompasses a great
+    deal of team work. We have worked from the very beginning to build a network of partners that
+    we can rely on for the services we provide. Our First partner, Sekai Studios handles Technological devs to keep
+    us up-to-date with the trends in Tech and maintain the Security of servers back to back.
+
+    Secondly, Our main supplier for products is Afia Leigh Pvt(Ltd) who run a shipping business across the World.
+    Afia have some of the best products at the lowest price possible, it is rather evident in our catalogs.
+    This service hinges on great Delivery services, which admittedly are always improving, but, we would
+    like to thank Swift for the delivery services they offer to get your products to you so we never miss a
+    deadline.
+
+    The circle if not complete is the last partner isn\'t accounted for and that You! Zim Mall aims to serve
+    the people, hence we can\'t be efficient unless we give you the chance to really participate. Therefore
+    as a user, you can buy of sell products on our App for close to nothing. </string>
+
+    <string name="concl">This is not the full summary of who we are, please visit sekai.co.zw to get a
+    full picture. Follow our Social Media pages to get updates on new products, new app updates and other
+    valuable information like Job Vacancies at Zim Mall. Thanks for the time, happy shopping.</string>
+</resources>
