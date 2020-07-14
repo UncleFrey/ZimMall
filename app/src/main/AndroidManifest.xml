@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/icon_bag_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
-        <activity android:name=".ActivityRecoveryExecute"></activity>
+        <activity android:name=".ActivityRecoveryConfirmation"></activity>
+        <activity android:name=".ActivityRecoveryExecute" />
         <activity android:name=".ActivitySecurityQuestions" />
         <activity android:name=".AdminActivities.ActivityAdminProductEdit" />
         <activity android:name=".AdminActivities.ActivityAdminOrderView" />
