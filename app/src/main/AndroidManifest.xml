@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,9 @@
         android:roundIcon="@mipmap/icon_bag_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
-        <activity android:name=".ActivityRecoveryConfirmation"></activity>
+        <activity android:name=".GodView.ActivityGodMenu"></activity>
+        <activity android:name=".AdminActivities.ActivityAdminResetPin" />
+        <activity android:name=".ActivityRecoveryConfirmation" />
         <activity android:name=".ActivityRecoveryExecute" />
         <activity android:name=".ActivitySecurityQuestions" />
         <activity android:name=".AdminActivities.ActivityAdminProductEdit" />

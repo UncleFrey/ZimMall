@@ -3,6 +3,7 @@ package co.zw.sekai.zimmall;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,7 +37,7 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
     private EditText editPhone, editPin;
     private Button btnLogin;
     private CheckBox checkRemember;
-    private TextView txtSignature;
+    private TextView txtSignature, forgotPass;
 
     //Firebase
     private FirebaseDatabase usersDB;
@@ -58,12 +59,14 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
         checkRemember = (CheckBox)findViewById(R.id.checkBoxRemember);
         loadingBar = new ProgressDialog(this);
         txtSignature = (TextView)findViewById(R.id.textViewSignature);
+        forgotPass = findViewById(R.id.textViewForgotPassword);
         //Paper
         Paper.init(this);
 
         //Set Onclick
         btnLogin.setOnClickListener(this);
         txtSignature.setOnClickListener(this);
+        forgotPass.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +77,19 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
 
         if (v == txtSignature) {
             toggleMode();
+        }
+
+        if (v == forgotPass){
+            Intent intent = new Intent(ActivityLogin.this, ActivityRecoveryExecute.class);
+            final String phone  = editPhone.getText().toString();
+            if (!TextUtils.isEmpty(phone) && phone.length() == 10){
+                intent.putExtra("phone", phone);
+                startActivity(intent);
+            }else {
+                editPhone.setError("Phone number required");
+                editPhone.requestFocus();
+            }
+
         }
     }
 
@@ -95,7 +111,7 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
         
         if (TextUtils.isEmpty(phone) || phone.length() != 10)
         {
-            editPhone.setError("Invalid Pin");
+            editPhone.setError("Invalid Phone");
             editPhone.requestFocus();
             return;
         }
@@ -202,6 +218,7 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
                             loadingBar.dismiss();
                             editPin.setError("Pin is Incorrect");
                             editPin.requestFocus();
+                            forgotPass.setVisibility(View.VISIBLE);
                         }
                     }
                 }
